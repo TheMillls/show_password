@@ -35,7 +35,7 @@ $(document).ready(function () {
 
       $(this).css(
         "backgroundImage",
-        isPassword ? "url(/upload/eye_open.svg)" : "url(/upload/eye_close.svg)"
+        isPassword ? "url(eye_open.svg)" : "url(eye_close.svg)"
       );
 });
   });
