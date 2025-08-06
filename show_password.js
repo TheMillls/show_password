@@ -18,7 +18,7 @@ $(document).ready(function () {
         cursor: "pointer",
         width: "20px",
         height: "20px",
-        backgroundImage: "url(/upload/eye_close.svg)",
+        backgroundImage: "url(eye_close.svg)",
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
