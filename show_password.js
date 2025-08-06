@@ -1,7 +1,5 @@
 $(document).ready(function () {
-  // Добавляем иконки ко всем полям password
   $('input[type="password"]').each(function () {
-    // Создаем обертку
     const $wrapper = $("<div>", {
       class: "password-wrapper",
       css: {
@@ -10,7 +8,6 @@ $(document).ready(function () {
       },
     });
 
-    // Создаем элемент для иконки
     const $icon = $("<span>", {
       class: "password-toggle",
       css: {
@@ -27,18 +24,15 @@ $(document).ready(function () {
         backgroundPosition: "center",
       },
     });
-
-    // Оборачиваем input и добавляем иконку
+    
     $(this).wrap($wrapper).after($icon);
-
-    // Обработчик клика по иконке
+    
     $icon.on("click", function () {
       const $input = $(this).prev("input");
       const isPassword = $input.attr("type") === "password";
 
       $input.attr("type", isPassword ? "text" : "password");
 
-      // Меняем иконку
       $(this).css(
         "backgroundImage",
         isPassword ? "url(/upload/eye_open.svg)" : "url(/upload/eye_close.svg)"
